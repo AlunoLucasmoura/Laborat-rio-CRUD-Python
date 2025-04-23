@@ -12,14 +12,15 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
-steps:
-  - name: Checkout code
-    uses: actions/checkout@v3
+  steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
 
-  - name: Set up Python
-    uses: actions/setup-python@v4
-    with:
-      python-version: '3.12'
-  - name: Run tests
-  
-    run: python -m unittest tests/test_app.py
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.12'
+    
+    - name: Run tests
+    
+      run: python -m unittest tests/test_app.py
