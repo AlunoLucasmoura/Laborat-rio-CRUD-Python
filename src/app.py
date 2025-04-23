@@ -3,7 +3,6 @@ usuarios = []
 
 def criar_usuario(nome, email, senha, cpf):
 
-
     if not all([nome, email, senha, cpf]):
         raise ValueError("Todos os campos são obrigatórios")
     
